@@ -324,36 +324,29 @@ nav {
   background: rgba(255,255,255,0.32);
   transition: background 0.2s, width 0.25s;
 }
-.carousel__dot:hover { background: rgba(255,255,255,0.7); }
+.carousel__dot:hover {
+  background: rgba(255,255,255,0.7);
+}
 
-/* Active dot via :target — when a slide is targeted its dot turns amber */
-#p1-s1:target ~ .carousel__dots .carousel__dot:nth-child(1),
-#p1-s2:target ~ .carousel__dots .carousel__dot:nth-child(2),
-#p1-s3:target ~ .carousel__dots .carousel__dot:nth-child(3),
-#p2-s1:target ~ .carousel__dots .carousel__dot:nth-child(1),
-#p2-s2:target ~ .carousel__dots .carousel__dot:nth-child(2),
-#p2-s3:target ~ .carousel__dots .carousel__dot:nth-child(3),
-#p3-s1:target ~ .carousel__dots .carousel__dot:nth-child(1),
-#p3-s2:target ~ .carousel__dots .carousel__dot:nth-child(2),
-#p3-s3:target ~ .carousel__dots .carousel__dot:nth-child(3) {
+/* ---------- Default state: first dot looks active ---------- */
+.carousel .carousel__dot:first-child {
   background: var(--accent);
   width: calc(var(--dot-size) * 2.5);
 }
 
-/* Default: first dot looks active on page load */
-.carousel__dots .carousel__dot:first-child {
-  background: var(--accent);
-  width: calc(var(--dot-size) * 2.5);
-}
-/* Reset first-child when a non-first slide is targeted */
-#p1-s2:target ~ .carousel__dots .carousel__dot:first-child,
-#p1-s3:target ~ .carousel__dots .carousel__dot:first-child,
-#p2-s2:target ~ .carousel__dots .carousel__dot:first-child,
-#p2-s3:target ~ .carousel__dots .carousel__dot:first-child,
-#p3-s2:target ~ .carousel__dots .carousel__dot:first-child,
-#p3-s3:target ~ .carousel__dots .carousel__dot:first-child {
+/* ---------- Reset first dot when a non‑first slide is targeted ---------- */
+.carousel:has([id$="-s2"]:target) .carousel__dot:first-child,
+.carousel:has([id$="-s3"]:target) .carousel__dot:first-child {
   background: rgba(255,255,255,0.32);
   width: var(--dot-size);
+}
+
+/* ---------- Activate the correct dot ---------- */
+.carousel:has([id$="-s1"]:target) .carousel__dot:nth-child(1),
+.carousel:has([id$="-s2"]:target) .carousel__dot:nth-child(2),
+.carousel:has([id$="-s3"]:target) .carousel__dot:nth-child(3) {
+  background: var(--accent);
+  width: calc(var(--dot-size) * 2.5);
 }
 
 /* ─── PROJECT BODY ───────────────────────────────────────── */

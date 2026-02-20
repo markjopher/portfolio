@@ -143,18 +143,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PROJECTS  —  pure HTML & CSS, strictly zero JavaScript
-       ─────────────────────────────────────────────────────────
-       Carousel  : CSS scroll-snap + anchor-link dot navigation
-       Fullscreen : CSS :target lightboxes placed at page bottom
-       ─────────────────────────────────────────────────────────
-       HOW TO ADD YOUR SCREENSHOTS
-         1. Put files in an  images/  folder next to index.html
-         2. Replace every  src="images/pX-Y.webp"  below
-         3. Also update the matching  src=  inside the .lb divs
-            at the very bottom of this file
-       ═══════════════════════════════════════════════════════════ -->
   <section id="projects">
     <div class="container">
       <div class="reveal">
@@ -285,72 +273,11 @@
           </div>
         </article>
 
-        <!-- ══ PROJECT 03 — LEFT ══
-        <article class="proj-tl__item proj-tl__item--left reveal">
-          <div class="proj-tl__node" aria-hidden="true"><span class="proj-tl__year">2026</span></div>
-          <div class="project-card">
-
-            <div class="carousel" aria-label="Project 3 screenshots">
-              <div class="carousel__viewport">
-
-                <div class="carousel__slide" id="p3-s1">
-                  <a href="#lb-p3-s1" class="slide__fs-link" aria-label="Open fullscreen">
-                    <img src="images/p3-a.webp" alt="C# App – main form" loading="lazy"
-                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                    <span class="slide__fallback">📁 images/p3-a.webp</span>
-                    <span class="slide__fs-hint">⤢ Fullscreen</span>
-                  </a>
-                </div>
-                <div class="carousel__slide" id="p3-s2">
-                  <a href="#lb-p3-s2" class="slide__fs-link" aria-label="Open fullscreen">
-                    <img src="images/p3-b.webp" alt="C# App – data view" loading="lazy"
-                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                    <span class="slide__fallback">📁 images/p3-b.webp</span>
-                    <span class="slide__fs-hint">⤢ Fullscreen</span>
-                  </a>
-                </div>
-                <div class="carousel__slide" id="p3-s3">
-                  <a href="#lb-p3-s3" class="slide__fs-link" aria-label="Open fullscreen">
-                    <img src="images/p3-c.webp" alt="C# App – validation" loading="lazy"
-                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-                    <span class="slide__fallback">📁 images/p3-c.webp</span>
-                    <span class="slide__fs-hint">⤢ Fullscreen</span>
-                  </a>
-                </div>
-
-              </div>
-              <div class="carousel__dots">
-                <a href="#p3-s1" class="carousel__dot" aria-label="Slide 1"></a>
-                <a href="#p3-s2" class="carousel__dot" aria-label="Slide 2"></a>
-                <a href="#p3-s3" class="carousel__dot" aria-label="Slide 3"></a>
-              </div>
-            </div>
-
-            <div class="project-body">
-              <div class="project-meta">
-                <span class="project-number">03</span>
-                <div class="project-tags"><span class="project-tag">C#</span><span class="project-tag">Windows Forms</span></div>
-              </div>
-              <h3 class="project-title">C# Desktop Application</h3>
-              <p class="project-desc">A desktop application developed as part of ICT coursework. Built using C# and Windows Forms, focusing on user input handling, basic data management, and clean interface design.</p>
-              <div class="project-highlights">
-                <div class="project-highlight"><span class="highlight-icon">🖥️</span>Built with C# Windows Forms — fully functional GUI application</div>
-                <div class="project-highlight"><span class="highlight-icon">📋</span>Includes form validation, data input, and structured output</div>
-                <div class="project-highlight"><span class="highlight-icon">📝</span>Documented with full technical write-up and user guide</div>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link project-link-ghost">GitHub</a>
-              </div>
-            </div>
-
-          </div>
-        </article> -->
-
       </div><!-- /proj-tl -->
     </div>
   </section>
 
-  <!-- EXPERIENCE  (uses .exp-tl — separate from projects .proj-tl) -->
+  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="container">
       <div class="reveal">
@@ -442,18 +369,6 @@
     <p>Designed &amp; built for <span>Mark Jopher Domanico</span> &nbsp;·&nbsp; 2025 &nbsp;·&nbsp; BSIT Student &amp; NCII Certified IT Specialist</p>
   </footer>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       FULLSCREEN LIGHTBOXES  ·  CSS :target only  ·  No JS
-
-       • Each .lb is hidden by default (display: none)
-       • .lb:target { display: flex } shows it when URL hash matches
-       • The dark backdrop <a href="#projects"> closes on click
-       • ← prev / → next arrows navigate between sibling .lb divs
-       • × button also returns to #projects to dismiss
-
-       UPDATE IMAGES: change each <img src="…"> below to match
-       the same filenames used in the carousel slides above.
-       ═══════════════════════════════════════════════════════════ -->
 
   <!-- Project 1 lightboxes -->
   <div id="lb-p1-s1" class="lb">

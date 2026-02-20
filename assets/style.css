@@ -155,8 +155,7 @@ nav {
 .cert-topic { font-family: var(--font-mono); font-size: 0.7rem; padding: 0.2rem 0.6rem; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; color: var(--muted); }
 
 /* ═══════════════════════════════════════════════════════════
-   PROJECTS — timeline  (class prefix: proj-tl)
-   Separate from experience timeline (exp-tl) — no conflicts
+   PROJECTS
    ═══════════════════════════════════════════════════════════ */
 #projects {
   --tl-line-color: rgba(232, 160, 80, 0.22);
@@ -379,8 +378,7 @@ nav {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   FULLSCREEN LIGHTBOX  ·  CSS :target only
-   Hidden by default; .lb:target shows when hash matches id.
+   FULLSCREEN LIGHTBOX 
    ═══════════════════════════════════════════════════════════ */
 .lb {
   display: none;
@@ -468,7 +466,7 @@ nav {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   EXPERIENCE  (class prefix: exp-tl — not .timeline)
+   EXPERIENCE 
    ═══════════════════════════════════════════════════════════ */
 #experience { background: var(--bg); }
 .exp-tl { position: relative; padding-left: 2rem; }
